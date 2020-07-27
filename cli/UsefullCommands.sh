@@ -1,5 +1,19 @@
+# Login to Azure
+az login
+## List subscritions all
 az account list --output table
+## List subscriptions enabled only
+az account list --output table | grep Enabled
+## Set context to a Subsctiption
 az account set --subscription "My Demos"
+
+# Listing Azure Locations
+## Unstructured
+az account list-locations -o table
+## Structured and filtered (Query)
+az account list-locations
+    --query "[].{displayname:displayName:,name:name,latitude:metadata.latitude,longitude:metadata.longitude,geographyGroup:metadata.geographyGroup}"
+    --output table
 
 
 
