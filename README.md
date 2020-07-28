@@ -1,4 +1,4 @@
-# Infrastructure as Code: with Terraform on Azure
+# Infrastructure as Code (IaC): with Terraform on Azure
 
 > Build, test, deploy infrastructure with the Terraform on Azure using DevOps
 
